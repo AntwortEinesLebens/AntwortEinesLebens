@@ -5,14 +5,14 @@
  */
 
 export default {
-  plugins: [
-    {
-      name: 'preset-default',
-      params: {
-        overrides: {
-          removeHiddenElems: false,
-        },
-      },
-    },
-  ],
+	plugins: [
+		{
+			name: "preset-default",
+			params: {
+				overrides: {
+					removeHiddenElems: false,
+				},
+			},
+		},
+	],
 };

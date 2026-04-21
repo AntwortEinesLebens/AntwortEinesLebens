@@ -47,3 +47,13 @@ jobs:
           enable-cache: true
       - name: Check Markdown formatting
         run: uvx mdformat --check .
+  biome:
+    name: Check formatting with Biome
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+      - name: Setup Biome
+        uses: biomejs/setup-biome@v2
+      - name: Check JS formatting
+        run: biome format .
