@@ -50,7 +50,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v7
       - name: Lint Markdown code
-        uses: DavidAnson/markdownlint-cli2-action@v23
+        uses: DavidAnson/markdownlint-cli2-action@v24
   biome:
     name: Lint with Biome
     runs-on: ubuntu-latest
